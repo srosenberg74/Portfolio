@@ -19,12 +19,20 @@
     />
   </head>
   <body class="bg-secondary">
+    <style>
+      :target::before {
+        content: "";
+        display: block;
+        height: 74px;
+        margin-top: -74px;
+      }
+    </style>
     <nav
-      class="navbar navbar-expand-lg navbar-dark"
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
       style="background-color: #082c45; font-family: licorice"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#Profile">Sam Rosenberg</a>
+        <a class="navbar-brand fs-2" href="#">Sam Rosenberg</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,21 +52,22 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Study">Areas of Study</a>
+              <a class="nav-link active" href="#Study">Areas of Study</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Career">Career Development</a>
+              <a class="nav-link active" href="#Career">Career Development</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Education">Education</a>
+              <a class="nav-link active" href="#Education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
+              <a class="nav-link active" href="#Portfolio">Portfolio</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="pt-4 mt-5"></div>
     <div
       class="container p-2 px-4 border border-secondary rounded-2 mx-auto w-50 mt-3"
       style="
@@ -87,7 +96,11 @@
         </div>
       </div>
       <div class="mb-2">
-        <h1 class="my-3 fs-1" style="color: #082c45a8; font-family: PT Serif" id="Profile">
+        <h1
+          class="my-3 fs-1"
+          style="color: #082c45a8; font-family: PT Serif; scroll-padding: 70px"
+          id="Profile"
+        >
           Profile
         </h1>
         <p
@@ -107,7 +120,11 @@
         </p>
       </div>
       <div class="">
-        <h2 class="my-3 fs-1" style="color: #082c45a8; font-family: PT Serif" id="Study">
+        <h2
+          class="my-3 fs-1"
+          style="color: #082c45a8; font-family: PT Serif"
+          id="Study"
+        >
           Areas of Study
         </h2>
         <p
@@ -169,7 +186,11 @@
           ><br />
           C++, Python, C#
         </p>
-        <h2 class="my-3 fs-1" style="color: #082c45a8; font-family: PT Serif" id="Career">
+        <h2
+          class="my-3 fs-1"
+          style="color: #082c45a8; font-family: PT Serif"
+          id="Career"
+        >
           Career Development
         </h2>
         <p
@@ -189,7 +210,11 @@
           of co-apprentices, I am learning and honing more and more of the
           skills I will need to succeed in the tech world everyday.
         </p>
-        <h2 class="my-3 fs-1" style="color: #082c45a8; font-family: PT Serif" id="Education">
+        <h2
+          class="my-3 fs-1"
+          style="color: #082c45a8; font-family: PT Serif"
+          id="Education"
+        >
           Education
         </h2>
         <p
@@ -223,7 +248,11 @@
           ><br />I have a Bachelor of Arts Degree in English from the University
           of California, Santa Barbara
         </p>
-        <h2 class="my-3 fs-1" style="color: #082c45a8; font-family: PT Serif" id="Portfolio">
+        <h2
+          class="my-3 fs-1"
+          style="color: #082c45a8; font-family: PT Serif"
+          id="Portfolio"
+        >
           Portfolio
         </h2>
 
