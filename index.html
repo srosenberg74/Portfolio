@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sam's Portfolio</title>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,19 +26,24 @@
   </head>
   <body class="bg-secondary">
     <style>
-      :target::before {
+      :root {
+        /* --header-height: 74px; */
+        scroll-padding-top: 88px;
+        scroll-behavior: smooth;
+      }
+      /* :target::before {
         content: "";
         display: block;
         height: 74px;
         margin-top: -74px;
-      }
+      } */
     </style>
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top"
       style="background-color: #082c45; font-family: licorice"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#">Sam Rosenberg</a>
+        <a class="navbar-brand fs-2 nav-item" href="#">Sam Rosenberg</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -69,31 +80,18 @@
     </nav>
     <div class="pt-4 mt-5"></div>
     <div
-      class="container p-2 px-4 border border-secondary rounded-2 mx-auto w-50 mt-3"
-      style="
-        width: 80vw;
-        background-color: #dfdddd;
-        transform: scale(1.2) translateY(9%);
-        margin-bottom: 270px;
-      "
+      class="container p-2 px-4 border border-secondary rounded-2 mx-auto w-75 my-3"
+      style="width: 80vw; background-color: #dfdddd"
     >
-      <div class="w-50" style="position: relative">
-        <div style="margin: 0 auto">
-          <img
-            src="Sam.jpg"
-            class="img-fluid float-start border border-dark rounded-1 me-4 mt-2"
-          />
-          <!-- <div
-            style="
-              position: absolute;
-              transform: translate(10%,520%);
-              color: #082c45;
-              font-family: Licorice;
-            "
-          >
-            <h2>Hello!</h2>
-          </div> -->
-        </div>
+      <div>
+        <img
+          src="Sam.jpg"
+          class="img-fluid d-md-none border border-dark rounded-1 me-4 mt-2"
+        />
+        <img
+          src="Sam.jpg"
+          class="w-50 float-md-start d-none d-md-block border border-dark rounded-1 me-4 mt-2"
+        />
       </div>
       <div class="mb-2">
         <h1
@@ -104,13 +102,8 @@
           Profile
         </h1>
         <p
-          class="fs-6 fw-bold"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
           I am a React Apprentice at Alphaworks (a subsidiary of Bitwise
           Industries). I am incredibly curious and have a huge thirst for
@@ -128,28 +121,18 @@
           Areas of Study
         </h2>
         <p
-          class="fs-6 fw-bold"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
           <strong class="fw-bolder fs-5" style="color: #082c45"
             >Web Development -</strong
           ><br />
-          React, React-Native, JavaScript, HTML, CSS, SASS, Bootstrap
+          React, React-Native, JavaScript, HTML, CSS, Bootstrap
         </p>
         <hr />
         <p
-          class="fs-6 fw-bold"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
           <strong class="fw-bolder fs-5" style="color: #082c45">Design -</strong
           ><br />
@@ -157,13 +140,8 @@
         </p>
         <hr />
         <p
-          class="fs-6 fw-bold"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
           <strong class="fw-bolder fs-5" style="color: #082c45"
             >Additional Software Experience -</strong
@@ -173,15 +151,10 @@
         </p>
         <hr />
         <p
-          class="fs-6 fw-bold mb-4"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold mb-4"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             >Additional Programming Languages Studied -</strong
           ><br />
           C++, Python, C#
@@ -194,21 +167,16 @@
           Career Development
         </h2>
         <p
-          class="fs-6 fw-bold"
-          style="
-            line-height: 1.4;
-            color: white;
-            color: #082c45d7;
-            font-family: raleway;
-          "
+          class="fs-5 fw-bold"
+          style="line-height: 1.4; color: #082c45d7; font-family: raleway"
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             >React Apprentice | Alphaworks | Sept 2021-current </strong
           ><br />I am truly blessed to be an Alphaworks Apprentice. For one
           year, I am being paid to do what I love, learn! Lead by Juan Lucero,
           an amazing and experienced Web Designer, and with an incredible group
-          of co-apprentices, I am learning and honing more and more of the
-          skills I will need to succeed in the tech world everyday.
+          of apprentices, I am learning and honing more and more of the skills I
+          will need to succeed in the tech world everyday.
         </p>
         <h2
           class="my-3 fs-1"
@@ -218,7 +186,7 @@
           Education
         </h2>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -226,7 +194,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             >Pursuing Associate's Degree in Web Design | Clovis Community
             College | August 2020-current </strong
           ><br />I am 3 units away from completing my A.S. Degree in Web Design.
@@ -235,7 +203,7 @@
           incredible skills I have been gathering.
         </p>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -243,7 +211,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             >Bachelor's Degree in English | UC Santa Barbara | 1993-1998 </strong
           ><br />I have a Bachelor of Arts Degree in English from the University
           of California, Santa Barbara
@@ -257,7 +225,7 @@
         </h2>
 
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -265,7 +233,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             ><a
               class="text-decoration-none"
               style="color: #082c45"
@@ -276,7 +244,7 @@
           ><br />A Reshareable Greeting Card
         </p>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -284,7 +252,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             ><a
               class="text-decoration-none"
               style="color: #082c45"
@@ -295,7 +263,7 @@
           ><br />An app that helps you make decisions!
         </p>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -303,7 +271,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             ><a
               class="text-decoration-none"
               style="color: #082c45"
@@ -315,7 +283,7 @@
           App (Group Project)
         </p>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -323,7 +291,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             ><a
               class="text-decoration-none"
               style="color: #082c45"
@@ -342,7 +310,7 @@
           >
         </p>
         <p
-          class="fs-6 fw-bold"
+          class="fs-5 fw-bold"
           style="
             line-height: 1.4;
             color: white;
@@ -350,7 +318,7 @@
             font-family: raleway;
           "
         >
-          <strong class="fw-bolder fs-5" style="color: #082c45"
+          <strong class="fw-bolder fs-4" style="color: #082c45"
             ><a
               class="text-decoration-none"
               style="color: #082c45"
@@ -361,8 +329,38 @@
           ><br />My page on Bridgegood.com, featuring several of my other
           projects spanning web design and video games
         </p>
+        <p
+          class="fs-5 fw-bold"
+          style="
+            line-height: 1.4;
+            color: white;
+            color: #082c45d7;
+            font-family: raleway;
+          "
+        >
+          <strong class="fw-bolder fs-4" style="color: #082c45"
+            ><a
+              class="text-decoration-none"
+              style="color: #082c45"
+              href="https://github.com/srosenberg74"
+              target="_blank"
+              >Github</a
+            ></strong
+          >
+        </p>
       </div>
     </div>
-    <div style="height: 90px"></div>
+
+    <!--Fix to make dropdown menu close on click-->
+    <script>
+      const navLinks = document.querySelectorAll(".nav-item");
+      const menuToggle = document.getElementById("navbarSupportedContent");
+      const bsCollapse = new bootstrap.Collapse(menuToggle);
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
   </body>
 </html>
